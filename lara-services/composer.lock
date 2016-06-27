@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3d227b142db199da5e6ca98e12c30215",
-    "content-hash": "0e640b0c01463aaf64880ad5c8997ab1",
+    "hash": "d16b309395db00e52b153dc6658b4717",
+    "content-hash": "95e9edce823f47c277550a094eb30c71",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -60,6 +60,101 @@
                 "preload"
             ],
             "time": "2015-11-09 22:51:51"
+        },
+        {
+            "name": "deefour/interactor",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deefour/interactor.git",
+                "reference": "753b8f1120cb79f14dee12749661cf8ef53e7e74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deefour/interactor/zipball/753b8f1120cb79f14dee12749661cf8ef53e7e74",
+                "reference": "753b8f1120cb79f14dee12749661cf8ef53e7e74",
+                "shasum": ""
+            },
+            "require": {
+                "deefour/transformer": "^1.0.2",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "^2.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Deefour\\Interactor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jason Daly",
+                    "email": "jason@deefour.me"
+                }
+            ],
+            "description": "Simple Service Objects",
+            "homepage": "https://github.com/deefour/interactor",
+            "keywords": [
+                "deefour",
+                "dto",
+                "interactor",
+                "laravel",
+                "service object"
+            ],
+            "time": "2016-02-19 22:10:54"
+        },
+        {
+            "name": "deefour/transformer",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deefour/transformer.git",
+                "reference": "12fcc8699fe9d5e23f74ada263cf0020dc237085"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deefour/transformer/zipball/12fcc8699fe9d5e23f74ada263cf0020dc237085",
+                "reference": "12fcc8699fe9d5e23f74ada263cf0020dc237085",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "^2.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Deefour\\Transformer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jason Daly",
+                    "email": "jason@deefour.me"
+                }
+            ],
+            "description": "Transform raw input data into consistent, immutable PHP objects",
+            "homepage": "https://github.com/deefour/interactor",
+            "keywords": [
+                "deefour",
+                "laravel",
+                "raw input",
+                "request data",
+                "transformer"
+            ],
+            "time": "2016-02-22 18:13:06"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
