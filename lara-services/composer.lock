@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c284a9c122da36c99a8b6597bdce7aa6",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "3d227b142db199da5e6ca98e12c30215",
+    "content-hash": "0e640b0c01463aaf64880ad5c8997ab1",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1727,6 +1727,46 @@
                 "dump"
             ],
             "time": "2016-05-24 10:03:10"
+        },
+        {
+            "name": "tightenco/mailthief",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tightenco/mailthief.git",
+                "reference": "8c769b1956b3efbb196c4d55a2836eca0c0f1904"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tightenco/mailthief/zipball/8c769b1956b3efbb196c4d55a2836eca0c0f1904",
+                "reference": "8c769b1956b3efbb196c4d55a2836eca0c0f1904",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.2.*|5.3.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.5",
+                "phpunit/phpunit": "^5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MailThief\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                }
+            ],
+            "description": "A fake Mailer for Laravel applications that takes the pain out of testing mail.",
+            "time": "2016-06-20 20:46:57"
         },
         {
             "name": "vlucas/phpdotenv",
