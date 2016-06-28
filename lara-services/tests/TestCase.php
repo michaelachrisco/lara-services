@@ -2,6 +2,7 @@
 
 abstract class TestCase extends Illuminate\Foundation\Testing\TestCase
 {
+    use VladaHejda\AssertException;
     /**
      * The base URL to use while testing the application.
      *
