@@ -11,6 +11,7 @@ class SendUserWelcomeEmail extends Job implements ShouldQueue
 {
     use InteractsWithQueue, SerializesModels;
 
+    protected $user;
     /**
      * Create a new job instance.
      *
