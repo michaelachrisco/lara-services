@@ -23,4 +23,25 @@ abstract class TestCase extends Illuminate\Foundation\Testing\TestCase
 
         return $app;
     }
+
+    public function assertBelongsTo($relation, $relationName)
+    {
+      $this->assertEquals('Illuminate\Database\Eloquent\Relations\BelongsTo', get_class($relation));
+
+      $this->assertEquals($relationName, get_class($relation->getRelated()));
+    }
+
+    public function assertHasOne($relation, $relationName)
+    {
+      $this->assertEquals('Illuminate\Database\Eloquent\Relations\HasOne', get_class($relation));
+
+      $this->assertEquals($relationName, get_class($relation->getRelated()));
+    }
+
+    public function assertHasMany($relation, $relationName)
+    {
+      $this->assertEquals('Illuminate\Database\Eloquent\Relations\HasMany', get_class($relation));
+
+      $this->assertEquals($relationName, get_class($relation->getRelated()));
+    }
 }

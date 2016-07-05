@@ -23,4 +23,13 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Returns collection of user videos.
+     *
+     * @return collection(App\Videos)
+     */
+    public function videos(){
+      return $this->HasMany('App\Video');
+    }
 }
