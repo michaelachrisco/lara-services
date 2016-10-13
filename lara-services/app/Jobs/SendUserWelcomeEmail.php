@@ -11,7 +11,7 @@ class SendUserWelcomeEmail extends Job implements ShouldQueue
 {
     use InteractsWithQueue, SerializesModels;
 
-    protected $user;
+    protected $service;
     /**
      * Create a new job instance.
      *
@@ -19,7 +19,7 @@ class SendUserWelcomeEmail extends Job implements ShouldQueue
      */
     public function __construct($user)
     {
-        $this->user = $user;
+        $this->service = new SendWelcomeEmailService($user);
     }
 
     /**
@@ -29,6 +29,6 @@ class SendUserWelcomeEmail extends Job implements ShouldQueue
      */
     public function handle()
     {
-      (new SendWelcomeEmailService($this->user))->call();
+      $this->service->call();
     }
 }

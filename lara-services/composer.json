@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "tightenco/mailthief": "^0.1.0",
         "deefour/interactor": "^1.1",
-        "norkunas/youtube-dl-php": "^0.2.3"
+        "norkunas/youtube-dl-php": "^0.2.3",
+        "appzcoder/crud-generator": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

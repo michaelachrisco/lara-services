@@ -5,10 +5,16 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">Videos</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                  @if($videos)
+                    <p>No videos found!</p>
+                    <a href='' class="btn btn-primary">Create Video</a>
+                  @endif
+                  @foreach($videos as $video)
+                    <li>{{$video->name}}</li>
+                  @endforeach
                 </div>
             </div>
         </div>

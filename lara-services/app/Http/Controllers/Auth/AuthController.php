@@ -70,7 +70,7 @@ class AuthController extends Controller
           'password' => bcrypt($data['password']),
       ]);
 
-      dispatch(new SendUserWelcomeEmail($user));
+      $this->dispatch(new SendUserWelcomeEmail($user));
 
       return $user;
     }
